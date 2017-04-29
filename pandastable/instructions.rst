@@ -1,4 +1,11 @@
-Requirement: Requires python>=3.3 or 2.7 and numpy, matplotlib and pandas.
+## Dependencies
+1. Python >= 2.7 or Python >= 3.3
+2. Numpy
+3. Matplotlib
+4. Pandas
+
+
+
 Installation: pip install pandastable, for python 3, pip3 install pandastable
 Explore data: just type dataexplore in shell to open the GUI
 Interact between the GUI and Python environment:
