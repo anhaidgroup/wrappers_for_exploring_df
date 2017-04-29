@@ -12,5 +12,4 @@ Explore the data through Open Refine by typing:
 p = Refine(df)
 After making changes to the data, we could get the new data by typing
 	newdf = p.export_pandas_frame()
-after calling export_pandas_frame, the openRefine project will be deleted automatically
 Then we could use pandas frame newdf to do the next step in data science. 
