@@ -1,9 +1,17 @@
-## Dependencies
+Dependencies
+------------
 1. Python >= 2.7 or Python >= 3.3
 2. Numpy
 3. Matplotlib
 4. Pandas
 
+Installation instructions
+-------------------------
+
+Example usage
+-------------
+
+For more examples, look into the examples directory for IPython notebooks
 
 
 Installation: pip install pandastable, for python 3, pip3 install pandastable
