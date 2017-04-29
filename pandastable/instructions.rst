@@ -27,6 +27,7 @@ Instructions to use this wrapper
 3. Finally, explore the dataframe using ExploreData command like this:
   
   df = pandas.read_csv('file.csv')
+  
   app = ExploreData(df)
 
 The above command will open a GUI filled with 'df' contents. The user can 
