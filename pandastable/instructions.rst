@@ -1,26 +1,44 @@
-Dependencies
-------------
-1. Python >= 2.7 or Python >= 3.3
-2. Numpy
-3. Matplotlib
-4. Pandas
-
 Installation instructions
 -------------------------
+
+Requirements
+------------
+Python >= 2.7 or Python >= 3.3
+
+Platforms
+---------
+Tested on ..
+
+Dependencies
+------------
+1. Numpy
+2. Matplotlib
+3. Pandas
+4. Pandastable
+
+
+Instructions to use this wrapper
+---------------------------------
+1. First, install the dependencies using pip or conda.
+2. Next, import explore module from pandastable wrapper directory like this:
+
+  from exploredata import ExploreData
+  
+3. Finally, explore the dataframe using ExploreData command like this:
+  
+  df = pandas.read_csv('file.csv')
+  app = ExploreData(df)
+
+The above command will open a GUI filled with 'df' contents. The user can 
+explore/update the dataframe in the GUI and after exploration he/she can 
+close the GUI. The updated dataframe can be accessed using 'df' variable
+directly.
 
 Example usage
 -------------
 
-For more examples, look into the examples directory for IPython notebooks
 
-
-Installation: pip install pandastable, for python 3, pip3 install pandastable
-Explore data: just type dataexplore in shell to open the GUI
-Interact between the GUI and Python environment:
-from exploredata import ExploreData
-df = pandas.read_csv('filename')
-We could open the Gui and pass the df to the Gui by typing
-app = ExploreData(df)
-After making changes though the GUI, we could directly access the changed data frame df. 
-
+Example IPython notebooks
+--------------------------
+For more examples, please refer to the IPython notebooks in the examples directory.
 
