@@ -1,20 +1,3 @@
-Requirement: python >= 2.7
-Installation: for the different platform, we could refer to this link:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions, for linux, we could just download the code, enter the directory and type ./refine in the shell. 
-Explore data: just enter the directory and type ./refine in the shell
-Interact between the GUI and Python environment:
-run the open refine server by entering the OpenRefine directory and type ./refine
- 
-type the import part:
-	from refine import Refine
-import pandas
-Explore the data through Open Refine by typing:
-	df = pandas.read_csv("filename")
-p = Refine(df)
-After making changes to the data, we could get the new data by typing
-	newdf = p.export_pandas_frame()
-after calling export_pandas_frame, the openRefine project will be deleted automatically
-Then we could use pandas frame newdf to do the next step in data science. 
-
 Installation instructions
 -------------------------
 
