@@ -20,11 +20,11 @@ Instructions to use this wrapper
 ---------------------------------
 1. First, for the different platform, we could refer to this link:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions, for linux, we could just download the code. 
 
-2. Next, import explore module from pandastable wrapper directory like this:
+2. Next, import explore module from openrefine wrapper directory like this:
 
   from refine import Refine
   
-3. Finally, explore the dataframe using ExploreData command like this:
+3. Finally, explore the dataframe using Refine command like this:
   
   df = pandas.read_csv("filename")
   
