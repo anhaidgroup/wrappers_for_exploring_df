@@ -27,7 +27,7 @@ class Refine:
     url = self.server + '/command/core/create-project-from-upload'
     response = requests.post(url, files=files, data=values)
     url_params = urllib.parse.parse_qs(urllib.parse.urlparse(response.url).query)
-    os.close(__)
+    outfile.close()
     os.remove(file_name)
     if 'project' in url_params:
       self.id = id = url_params['project'][0]
