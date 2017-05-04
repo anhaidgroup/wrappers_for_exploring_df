@@ -7,7 +7,7 @@ Python >= 2.7 or Python >= 3.3
 
 Platforms
 ---------
-Tested on Windows 10. But I need to comment out os.remove('refine_tmp.csv'). It's causing perssion error.
+Tested on Windows 10. But I need to comment out os.remove('refine_tmp.csv'). It's causing permission error.
 
 Dependencies
 ------------
