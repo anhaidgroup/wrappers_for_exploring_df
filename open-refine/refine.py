@@ -14,8 +14,9 @@ class Refine:
     #write the pandas frame to csv file
     #create temp file
     __, file_name = tempfile.mkstemp()
-    outfile = os.fdopen(__, 'w+')
+    outfile = os.fdopen(__, 'r+')
     df.to_csv(outfile)
+    outfile.close()
     file_path = file_name
     project_name = options['project_name'] if options != None and 'project_name' in options else file_name
 
@@ -23,11 +24,12 @@ class Refine:
     values = {
       'project-name' : project_name
     }
-    files = {'file': open(file_path, 'rb')}
+    outfile = open(file_path, 'r+')
+    files = {'file': outfile}
     url = self.server + '/command/core/create-project-from-upload'
     response = requests.post(url, files=files, data=values)
     url_params = urllib.parse.parse_qs(urllib.parse.urlparse(response.url).query)
-    os.close(__)
+    outfile.close()
     os.remove(file_name)
     if 'project' in url_params:
       self.id = id = url_params['project'][0]
