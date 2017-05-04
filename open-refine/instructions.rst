@@ -18,7 +18,7 @@ Dependencies
 
 Instructions to use this wrapper
 ---------------------------------
-1. First, you need to download the Open Refine Application. You can refer to this link for the installation of different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
+1. First, you should install Openrefine. About that, you could refer to this link for the installation of different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
 
 2. Then you need to execute the Open Refine application, i.e. having the Open Refine server running.
 
@@ -37,6 +37,8 @@ Instructions to use this wrapper
 The above command will open Open Refine GUI filled with 'df' contents. The user can 
 explore/update the dataframe in the GUI and after exploration he/she can 
 close the GUI. The updated dataframe can be accessed using this function: newdf = p.export_pandas_frame()
+After calling p.export_pandas_frame(), the open refine project will be deleted at the same time. If you want to
+explore the data, you should call p = Refine(df) to create a new open refine project. 
 
 Example usage
 -------------
