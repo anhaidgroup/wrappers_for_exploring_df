@@ -12,7 +12,7 @@ class Refine:
   def __init__(self, df, server='http://127.0.0.1:3333', options=None):
     self.server = server[0,-1] if server.endswith('/') else server
     #write the pandas frame to csv file
-    outfile = open("refine_tmp.csv", 'w+')
+    outfile = open("refine_tmp.csv")
     df.to_csv(outfile)
     file_name = "refine_tmp.csv"
     file_path = "refine_tmp.csv"
