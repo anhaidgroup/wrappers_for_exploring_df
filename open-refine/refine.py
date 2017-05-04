@@ -6,16 +6,17 @@ import requests
 import six
 from six.moves import html_parser
 from six.moves import urllib
-
+import tempfile
 
 class Refine:
   def __init__(self, df, server='http://127.0.0.1:3333', options=None):
     self.server = server[0,-1] if server.endswith('/') else server
     #write the pandas frame to csv file
-    outfile = open("refine_tmp.csv", 'w+')
+    #create temp file
+    __, file_name = tempfile.mkstemp()
+    outfile = os.fdopen(__, 'w+')
     df.to_csv(outfile)
-    file_name = "refine_tmp.csv"
-    file_path = "refine_tmp.csv"
+    file_path = file_name
     project_name = options['project_name'] if options != None and 'project_name' in options else file_name
 
 
@@ -27,7 +28,7 @@ class Refine:
     response = requests.post(url, files=files, data=values)
     url_params = urllib.parse.parse_qs(urllib.parse.urlparse(response.url).query)
     outfile.close()
-    os.remove("refine_tmp.csv")
+    os.remove(file_name)
     if 'project' in url_params:
       self.id = id = url_params['project'][0]
       self.project_name = project_name
