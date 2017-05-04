@@ -7,7 +7,7 @@ Python >= 2.7 or Python >= 3.3
 
 Platforms
 ---------
-Tested on ..
+Tested on Windows 10. But I need to comment out os.remove('refine_tmp.csv'). It's causing perssion error.
 
 Dependencies
 ------------
@@ -18,13 +18,15 @@ Dependencies
 
 Instructions to use this wrapper
 ---------------------------------
-1. First, for the different platform, we could refer to this link:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions, for linux, we could just download the code. 
+1. First, you need to download the Open Refine Application. You can refer to this link for the installation of different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
 
-2. Next, import explore module from openrefine wrapper directory like this:
+2. Then you need to execute the Open Refine application, i.e. having the Open Refine server running.
+
+3. Next, create your project under the openrefine wrapper directory, and then import explore module like this:
 
   from refine import Refine
   
-3. Finally, explore the dataframe using Refine command like this:
+4. Finally, explore the dataframe using Refine command like this:
   
   df = pandas.read_csv("filename")
   
