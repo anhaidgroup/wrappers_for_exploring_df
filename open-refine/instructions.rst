@@ -7,7 +7,7 @@ Python >= 2.7 or Python >= 3.4
 
 Platforms
 ---------
-Tested on Windows 10 with Python 2.7, 3.5.
+Tested on Windows 10 with Python 2.7,3.4,3.5,3.6.
 
 Dependencies
 ------------
@@ -18,11 +18,11 @@ Dependencies
 
 Instructions to use this wrapper
 ---------------------------------
-1. First, you should install Openrefine. About that, you could refer to this link for the installation of different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
+1. First, you should install Openrefine. You could refer to this link for installation on different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
 
 2. Then you need to execute the Open Refine application, i.e. having the Open Refine server running.
 
-3. Next, create your project under the openrefine wrapper directory, and then import explore module like this:
+3. Next, create your project under the openrefine wrapper directory(This is subject to change after we integrate wrapper with Magellan), and then import explore module like this:
 
   from refine import Refine
   
@@ -31,6 +31,8 @@ Instructions to use this wrapper
   df = pandas.read_csv("filename")
   
   p = Refine(df)
+  
+5. After your exploration with the data, you can simply close the window and write this in the python console:
 
   newdf = p.export_pandas_frame()
 
