@@ -20,18 +20,20 @@ Tested on Windows with Python 3.4, 3.5, 3.6
 ## Instructions to use this wrapper
 
 1. First, install the dependencies using pip or conda.
+
 		$pip install pandas table
-  
+or
+
 		$conda install conda install -c dmnfarrell pandastable=0.7.1
 2. Next, import explore module from pandastable wrapper directory like this:
 
-  from exploredata import ExploreData
+  		>>>from exploredata import ExploreData
   
 3. Finally, explore the dataframe using ExploreData command like this:
   
-  df = pandas.read_csv('file.csv')
+  		>>>df = pandas.read_csv('file.csv')
   
-  app = ExploreData(df)
+  		>>>app = ExploreData(df)
 
 The above command will open a GUI filled with 'df' contents. The user can 
 explore/update the dataframe in the GUI and after exploration he/she can 
