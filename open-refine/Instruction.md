@@ -26,13 +26,16 @@ requests version: 2.12.4
 
 3. Next, create your project under the openrefine wrapper directory(This is subject to change after we integrate wrapper with Magellan), and then import explore module like this:
 
-  from refine import Refine
+  from open_refine_wrapper import data_explore
   
-4. Finally, explore the dataframe using Refine command like this:
+4. Finally, copy the URL from the open refine main page and explore the dataframe using data_explore command like this:
   
   df = pandas.read_csv("filename")
   
-  p = Refine(df)
+  p = data_explore(df,"{the url you copied}")
+  
+  This is something you should expect to see
+![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefineProject.PNG)
   
 5. After your exploration with the data, you can simply close the window and write this in the python console:
 
