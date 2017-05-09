@@ -7,11 +7,11 @@ Python >= 2.7 or Python >= 3.4
 
 ## Platforms
 
-Tested on Windows with Python 3.4, 3.5, 3.6
-numpy version: 1.11.3
-matplotlib version: 2.0.0
-pandas version: 0.19.2
-pandastable version: 0.7.2
+	Tested on Windows with Python 3.4, 3.5, 3.6
+	numpy version: 1.11.3
+	matplotlib version: 2.0.0
+	pandas version: 0.19.2
+	pandastable version: 0.7.2
 
 ## Dependencies
 
