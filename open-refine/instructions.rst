@@ -23,6 +23,7 @@ Instructions to use this wrapper
 
 2. Then you need to execute the Open Refine application, i.e. go to the directory where you download openrefine and excecute the open refine executable. You will see something like this.
 ..figure::OpenRefineMain.png
+  :align: center
 
 3. Next, create your project under the openrefine wrapper directory(This is subject to change after we integrate wrapper with Magellan), and then import explore module like this:
 
