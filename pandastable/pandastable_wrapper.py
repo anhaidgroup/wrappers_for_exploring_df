@@ -6,7 +6,7 @@ from pandastable import Table, TableModel
 import pandas
 
 
-class explore_data(Frame):
+class data_explore(Frame):
 	"""Basic GUI frame for the table
  		Returns:
 		tkinter frame
