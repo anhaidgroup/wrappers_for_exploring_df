@@ -24,7 +24,7 @@ Tested on Windows with Python 3.4, 3.5, 3.6
 		$pip install pandas table
 or
 
-		$conda install conda install -c dmnfarrell pandastable=0.7.1
+	$conda install conda install -c dmnfarrell pandastable=0.7.1
 2. Next, import explore module from pandastable wrapper directory like this:
 
   		>>>from exploredata import ExploreData
