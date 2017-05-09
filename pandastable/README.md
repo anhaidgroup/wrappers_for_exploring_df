@@ -38,6 +38,8 @@ Python >= 2.7 or Python >= 3.4
   		>>>df = pandas.read_csv('file.csv')
   
   		>>>app = ExploreData(df)
+		
+		>>>app.mainloop()
 
 The above command will open a GUI filled with 'df' contents. The user can 
 explore/update the dataframe in the GUI and after exploration he/she can 
