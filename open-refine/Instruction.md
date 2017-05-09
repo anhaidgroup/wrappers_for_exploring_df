@@ -35,7 +35,7 @@ requests version: 2.12.4
   p = data_explore(df,"{the url you copied}")
   
   This is something you should expect to see
-![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefineProject.PNG)
+![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefinProject.PNG)
   
 5. After your exploration with the data, you can simply close the window and write this in the python console:
 
