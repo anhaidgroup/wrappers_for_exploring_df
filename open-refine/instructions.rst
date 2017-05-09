@@ -8,11 +8,12 @@ Python >= 2.7 or Python >= 3.4
 Platforms
 ---------
 Tested on Windows 10 with Python 2.7,3.4,3.5,3.6.
+requests version: 2.12.4
 
 Dependencies
 ------------
-1. Requests
-2. Urllib
+1. requests
+2. urllib
 3. Open Refine
 
 
@@ -20,7 +21,8 @@ Instructions to use this wrapper
 ---------------------------------
 1. First, you should install Openrefine. You could refer to this link for installation on different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
 
-2. Then you need to execute the Open Refine application, i.e. having the Open Refine server running.
+2. Then you need to execute the Open Refine application, i.e. go to the directory where you download openrefine and excecute the open refine executable. You will see something like this.
+..figure::OpenRefineMain.png
 
 3. Next, create your project under the openrefine wrapper directory(This is subject to change after we integrate wrapper with Magellan), and then import explore module like this:
 
