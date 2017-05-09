@@ -32,7 +32,7 @@ requests version: 2.12.4
   
   >>>df = pandas.read_csv("filename")
   
-  >>>p = data_explore(df,"{the url you copied}")
+  >>>p = data_explore(df, "{the url you copied}")
   
   This is something you should expect to see
 ![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefinProject.PNG)
@@ -46,7 +46,7 @@ The above command will open Open Refine GUI filled with 'df' contents. The user 
 explore/update the dataframe in the GUI and after exploration he/she can 
 close the GUI. The updated dataframe can be accessed using this function: newdf = p.export_pandas_frame()
 After calling p.export_pandas_frame(), the open refine project will be deleted at the same time. If you want to
-explore the data again, you should call p = data_explore(df,"{URL you copied}") to create a new open refine project. 
+explore the data again, you should call p = data_explore(df, "{URL you copied}") to create a new open refine project. 
 
 
 
