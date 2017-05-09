@@ -1,23 +1,23 @@
-#Installation instructions
+# Installation instructions
 -------------------------
 
-##Requirements
+## Requirements
 
 Python >= 2.7 or Python >= 3.4
 
-##Platforms
+## Platforms
 
 Tested on Windows 10 with Python 2.7,3.4,3.5,3.6.
 requests version: 2.12.4
 
-##Dependencies
+## Dependencies
 
 1. requests
 2. urllib
 3. Open Refine
 
 
-##Instructions to use this wrapper
+## Instructions to use this wrapper
 
 1. First, you should install Openrefine. You could refer to this link for installation on different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
 
@@ -47,7 +47,7 @@ explore the data, you should call p = Refine(df) to create a new open refine pro
 
 
 
-##Example IPython notebooks
+## Example IPython notebooks
 
 For more examples, please refer to the IPython notebooks in the examples directory.
 
