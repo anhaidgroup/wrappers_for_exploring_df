@@ -36,11 +36,11 @@ Python >= 2.7 or Python >= 3.4
 
         >>> from open-refine.open_refine_wrapper import data_explore
  
-7. Next, copy the URL from the open refine main page and explore the dataframe using data_explore command like this:
+7. Next, copy the URL from the address bar of Open Refine browser (typically this will be http://127.0.0.1:3333) and explore the dataframe using data_explore command like this:
   
-        >>>df = pandas.read_csv("filename")
+        >>>df = pandas.read_csv("filename.csv")
   
-        >>>p = data_explore(df, "{the url you copied}")
+        >>>p = data_explore(df, "http://127.0.0.1:3333") # replace http://127.0.0.1:3333 with approproate URL that you copied
   
   This is something you should expect to see
 ![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefinProject.PNG)
