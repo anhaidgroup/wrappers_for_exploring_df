@@ -1,12 +1,19 @@
 try:
+<<<<<<< HEAD:pandastable/exploredata.py
    from tkinter import *
 except ImportError as e:
    from Tkinter import *
 
+=======
+	from tkinter import *
+except ImportError as e:
+	from Tkinter import *
+>>>>>>> f046e4bfd7d6b8c84fd53a1518445984028ceca9:pandastable/pandastable_wrapper.py
 from pandastable import Table, TableModel
 import pandas
 
-class ExploreData(Frame):
+
+class data_explore(Frame):
 	"""Basic GUI frame for the table
  		Returns:
 		tkinter frame
