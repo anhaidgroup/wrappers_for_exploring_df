@@ -3,13 +3,13 @@
 
 ## Requirements
 
-Python >= 2.7 or Python >= 3.4
+Python >= 3.4
 
 ## Platforms
 
-	Tested on Windows with Python 3.4, 3.5, 3.6
+	Tested on Windows 10 with Python 3.4, 3.5, 3.6
 	
-	Tested on ubuntu 15.04 for python 2.7, 3.4, 3.5, 3.6
+	Tested on ubuntu 15.04 for python 3.4, 3.5, 3.6
 	
 	numpy version: 1.11.3
 	matplotlib version: 2.0.0
