@@ -37,10 +37,13 @@ Windows 10, Ubuntu 15.04
 		
 		>>>app.mainloop()
 
-The above command will open a GUI filled with 'df' contents. The user can 
-explore/update the dataframe in the GUI and after exploration he/she can 
-close the GUI. The updated dataframe can be accessed using 'df' variable
-directly.
+The above command will open a GUI filled with 'df' contents as shown below:
+
+
+
+The user can explore/update the dataframe in the GUI and after exploration he/she can 
+close the GUI. The updated dataframe can be accessed using the variable assigned to 
+the dataframe (for example: 'df' in the above command).
 
 
 
