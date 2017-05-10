@@ -27,13 +27,13 @@ Windows 10, Ubuntu 15.04
 		$conda install conda install -c dmnfarrell pandastable=0.7.1
 2. Next, import explore module from pandastable wrapper directory like this:
 
-  		>>>from exploredata import ExploreData
+  		>>>from pandastable.pandastable_wrapper import explore_data
   
-3. Finally, explore the dataframe using ExploreData command like this:
+3. Finally, explore the dataframe using explore_data command like this:
   
   		>>>df = pandas.read_csv('file.csv')
   
-  		>>>app = ExploreData(df)
+  		>>>app = explore_data(df)
 		
 		>>>app.mainloop()
 
