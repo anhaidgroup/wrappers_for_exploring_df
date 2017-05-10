@@ -7,7 +7,7 @@ Python >= 2.7 or Python >= 3.3
 
 Platforms
 ---------
-Tested on ..
+Tested on ubuntu 15.04 for python 2.7, 3.4, 3.5, 3.6
 
 Dependencies
 ------------

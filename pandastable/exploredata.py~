@@ -3,6 +3,7 @@ try:
 except ImportError as e:
    from Tkinter import *
 
+from tkinter import *
 from pandastable import Table, TableModel
 import pandas
 

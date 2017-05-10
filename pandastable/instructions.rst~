@@ -1,4 +1,45 @@
-This file should contain instructions on 
-1. how to install (specify  requirements. for example: Python > 2.7, os's supported) 
-2. step by step procedure that the user should follow to explore dataframe using the wrapper. Specifically, this should include what script to download, how to import that script into IPython and what command that the user should execute to explore dataframe.
+Installation instructions
+-------------------------
+
+Requirements
+------------
+Python >= 2.7 or Python >= 3.3
+
+Platforms
+---------
+Tested on ubuntu 15.04 for python 2.7, 3.4, 3.5, 3.6, 3.7
+
+Dependencies
+------------
+1. Numpy
+2. Matplotlib
+3. Pandas
+4. Pandastable
+
+
+Instructions to use this wrapper
+---------------------------------
+1. First, install the dependencies using pip or conda.
+2. Next, import explore module from pandastable wrapper directory like this:
+
+  from exploredata import ExploreData
+  
+3. Finally, explore the dataframe using ExploreData command like this:
+  
+  df = pandas.read_csv('file.csv')
+  
+  app = ExploreData(df)
+
+The above command will open a GUI filled with 'df' contents. The user can 
+explore/update the dataframe in the GUI and after exploration he/she can 
+close the GUI. The updated dataframe can be accessed using 'df' variable
+directly.
+
+Example usage
+-------------
+
+
+Example IPython notebooks
+--------------------------
+For more examples, please refer to the IPython notebooks in the examples directory.
 
