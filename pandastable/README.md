@@ -5,16 +5,9 @@
 
 Python >= 3.4
 
-## Platforms
+## Platforms tested
 
-	Tested on Windows 10 with Python 3.4, 3.5, 3.6
-	
-	Tested on ubuntu 15.04 for python 3.4, 3.5, 3.6
-	
-	numpy version: 1.11.3
-	matplotlib version: 2.0.0
-	pandas version: 0.19.2
-	pandastable version: 0.7.2
+Windows 10, Ubuntu 15.04
 
 ## Dependencies
 
@@ -28,7 +21,7 @@ Python >= 3.4
 
 1. First, install the dependencies using pip or conda.
 
-		$pip install pandas table
+		$pip install pandastable
 	or
 
 		$conda install conda install -c dmnfarrell pandastable=0.7.1
