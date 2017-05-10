@@ -49,12 +49,6 @@ Python >= 2.7 or Python >= 3.4
 8. Finally, once the data exploration is done, you can simply close the window and the updated dataframe can be accessed like this:
 
         >>>newdf = p.export_pandas_frame()
-        
-
-Note: After calling p.export_pandas_frame(), the open refine project will be deleted at the same time. If you want to
-explore the data again, you should call p = data_explore(df, "{URL you copied}") to create a new open refine project. 
-
-
 
 ## Example IPython notebooks
 
