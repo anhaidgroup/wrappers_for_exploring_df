@@ -7,8 +7,10 @@ Python >= 2.7 or Python >= 3.4
 ## Platforms
 
         Tested on Windows 10 with Python 2.7,3.4,3.5,3.6.
-        requests version: 2.12.4
+        
+        Tested on Ubuntu 15.04 with Python 2.7, 3.4, 3.5, 3.6. 
 
+        requests version: 2.12.4
 ## Dependencies
 
 1. requests
