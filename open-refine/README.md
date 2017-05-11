@@ -6,49 +6,49 @@ Python >= 2.7 or Python >= 3.4
 
 ## Platforms
 
-        Tested on Windows 10 with Python 2.7,3.4,3.5,3.6.
-        requests version: 2.12.4
+######## Update this as per pandastable template
 
 ## Dependencies
 
 1. requests
 2. urllib
-3. Open Refine
+3. OpenRefine
 
 
 ## Instructions to use this wrapper
 
-1. First, you should install Openrefine. You could refer to this link for installation on different OS:  https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions
+1. First, you should install OpenRefine. To install OpenRefine, go to this [link]( https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions) and follow the instructions for different platforms.
 
-2. Then you need to execute the Open Refine application, i.e. go to the directory where you download openrefine and excecute the open refine executable. You will see something like this.
+2. Then you need to execute the OpenRefine application. Specifically, go to this [link]( https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions) and follow the instructions to run on different platforms. Once the OpenRefine starts, you will see something like this.
 
 ![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefineMain.PNG)
 
-3. Next, create your project under the openrefine wrapper directory(This is subject to change after we integrate wrapper with Magellan), and then import explore module like this:
+3. Next, Clone this repository to a temporary directory in your local machine.
 
-        >>>from open_refine_wrapper import data_explore
+4. Next, go to the directory which includes the file to explore and open a Python shell or IPython notebook. 
+
+5. Then, include the path of the temporary directory (from step 3) to system's path like this:
+
+        >>> import sys
+        >>> sys.path.append('path/to/this/repository')
+        
+6. Next, import open refine wrapper like this 
+
+        >>> from open-refine.open_refine_wrapper import data_explore
+ 
+7. Next, copy the URL from the address bar of Open Refine browser (typically this will be http://127.0.0.1:3333) and explore the dataframe using data_explore command like this:
   
-4. Finally, copy the URL from the open refine main page and explore the dataframe using data_explore command like this:
+        >>>df = pandas.read_csv("filename.csv")
   
-        >>>df = pandas.read_csv("filename")
-  
-        >>>p = data_explore(df, "{the url you copied}")
+        >>>p = data_explore(df, "http://127.0.0.1:3333") # replace http://127.0.0.1:3333 with approproate URL that you copied
   
   This is something you should expect to see
 ![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefinProject.PNG)
   
 
-5. After your exploration with the data, you can simply close the window and write this in the python console:
+8. Finally, once the data exploration is done, you can simply close the window and the updated dataframe can be accessed like this:
 
         >>>newdf = p.export_pandas_frame()
-
-The above command will open Open Refine GUI filled with 'df' contents. The user can 
-explore/update the dataframe in the GUI and after exploration he/she can 
-close the GUI. The updated dataframe can be accessed using this function: newdf = p.export_pandas_frame()
-After calling p.export_pandas_frame(), the open refine project will be deleted at the same time. If you want to
-explore the data again, you should call p = data_explore(df, "{URL you copied}") to create a new open refine project. 
-
-
 
 ## Example IPython notebooks
 

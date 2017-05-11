@@ -3,15 +3,11 @@
 
 ## Requirements
 
-Python >= 2.7 or Python >= 3.4
+Python >= 3.4
 
-## Platforms
+## Platforms tested
 
-	Tested on Windows with Python 3.4, 3.5, 3.6
-	numpy version: 1.11.3
-	matplotlib version: 2.0.0
-	pandas version: 0.19.2
-	pandastable version: 0.7.2
+Windows 10, Ubuntu 15.04
 
 ## Dependencies
 
@@ -25,26 +21,29 @@ Python >= 2.7 or Python >= 3.4
 
 1. First, install the dependencies using pip or conda.
 
-		$pip install pandas table
+		$pip install pandastable
 	or
 
 		$conda install conda install -c dmnfarrell pandastable=0.7.1
 2. Next, import explore module from pandastable wrapper directory like this:
 
-  		>>>from exploredata import ExploreData
+  		>>>from pandastable.pandastable_wrapper import explore_data
   
-3. Finally, explore the dataframe using ExploreData command like this:
+3. Finally, explore the dataframe using explore_data command like this:
   
   		>>>df = pandas.read_csv('file.csv')
   
-  		>>>app = ExploreData(df)
+  		>>>app = explore_data(df)
 		
 		>>>app.mainloop()
 
-The above command will open a GUI filled with 'df' contents. The user can 
-explore/update the dataframe in the GUI and after exploration he/she can 
-close the GUI. The updated dataframe can be accessed using 'df' variable
-directly.
+The above command will open a GUI filled with 'df' contents as shown below:
+
+
+
+The user can explore/update the dataframe in the GUI and after exploration he/she can 
+close the GUI. The updated dataframe can be accessed using the variable assigned to 
+the dataframe (for example: 'df' in the above command).
 
 
 
