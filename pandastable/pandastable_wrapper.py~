@@ -24,7 +24,7 @@ class data_explore(Frame):
 		self.table = pt = Table(f, dataframe=df,
 			                    showtoolbar=True, showstatusbar=True)
 		pt.show()
-		self.mainloop()
+        self.mainloop()
 
 
 
