@@ -1,9 +1,12 @@
-from exploredata import ExploreData
-import pandas
-#get the pandas frame from file
-df = pandas.read_csv('table.csv')
-#show the pandastable application
-app = ExploreData(df)
-#block the pandastable application
-app.mainloop()
+#Initial import
+from pandastable_wrapper import data_explore
+import pandas as pd
+
+#read in pandas dataframe
+df = pd.read_csv("table.csv")
+
+#Invoke the pandastable gui for data exploration
+#The process will be blocked until closing the GUI
+data_explore(df)
+
 #use df after making change through the GUI

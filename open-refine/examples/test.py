@@ -1,10 +1,13 @@
+#Initial import
 from open_refine_wrapper import data_explore
-import pandas
+import pandas as pd
 
-# read file to pandas
-df = pandas.read_csv("table.csv")
-# create a openrefine project
-p = data_explore(df)
-# get the new dataframe after making changes to the data
+#read in pandas dataframe
+df = pd.read_csv('table.csv')
+
+#Invoke the open refine gui for data exploration
+p = data_explore(df,"http://127.0.0.1:3333/")
+
+#Save the project back to our dataframe
 # after calling export_pandas_frame, the openRefine project will be deleted automatically
-newdf = p.export_pandas_frame()
+df = p.export_pandas_frame()
