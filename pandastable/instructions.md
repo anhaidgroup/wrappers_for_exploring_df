@@ -33,9 +33,8 @@ Windows 10, Ubuntu 15.04
   
   		>>>df = pandas.read_csv('file.csv')
   
-  		>>>app = explore_data(df)
-		
-		>>>app.mainloop()
+  		>>>data_explore(df)
+
 
 The above command will open a GUI filled with 'df' contents as shown below:
 

@@ -3,7 +3,7 @@ from open_refine_wrapper import data_explore
 import pandas as pd
 
 #read in pandas dataframe
-df = pd.read_csv('table.csv')
+df = pd.read_csv('example_input_table.csv')
 
 #Invoke the open refine gui for data exploration
 p = data_explore(df,"http://127.0.0.1:3333/")

@@ -21,7 +21,7 @@ Python >= 2.7 or Python >= 3.4
 
 2. Then you need to execute the OpenRefine application. Specifically, go to this [link]( https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions) and follow the instructions to run on different platforms. Once the OpenRefine starts, you will see something like this.
 
-![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefineMain.PNG)
+![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/figures/OpenRefineMain.PNG)
 
 3. Next, Clone this repository to a temporary directory in your local machine.
 
@@ -38,17 +38,17 @@ Python >= 2.7 or Python >= 3.4
  
 7. Next, copy the URL from the address bar of Open Refine browser (typically this will be http://127.0.0.1:3333) and explore the dataframe using data_explore command like this:
   
-        >>>df = pandas.read_csv("filename.csv")
+        >>>df = pandas.read_csv("example_input_table.csv")
   
         >>>p = data_explore(df, "http://127.0.0.1:3333") # replace http://127.0.0.1:3333 with approproate URL that you copied
   
   This is something you should expect to see
-![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/OpenRefinProject.PNG)
+![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/open-refine/figures/OpenRefinProject.PNG)
   
 
 8. Finally, once the data exploration is done, you can simply close the window and the updated dataframe can be accessed like this:
 
-        >>>newdf = p.export_pandas_frame()
+        >>>df = p.export_pandas_frame()
 
 ## Example IPython notebooks
 
