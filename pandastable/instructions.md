@@ -47,7 +47,7 @@ Windows 10, Ubuntu 15.04
 
 
 The above command will open a GUI filled with 'df' contents as shown below:
-![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/pandastable/figures/OpenRefinProject.PNG)
+![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/pandastable/figures/Screenshot_PandasTable.png)
 
 The user can explore/update the dataframe in the GUI and after exploration he/she can 
 close the GUI. The updated dataframe can be accessed using the variable assigned to 
