@@ -25,16 +25,6 @@ Windows 10, Ubuntu 15.04
 	or
 
 		$conda install conda install -c dmnfarrell pandastable=0.7.1
-
-3. Next, Clone this repository to a temporary directory in your local machine.
-
-4. Next, go to the directory which includes the file to explore and open a Python shell or IPython notebook. 
-
-5. Then, include the path of the temporary directory (from step 3) to system's path like this:
-
-        >>> import sys
-        >>> sys.path.append('path/to/this/repository')
-
 2. Next, import explore module from pandastable wrapper directory like this:
 
   		>>>from pandastable.pandastable_wrapper import explore_data
@@ -47,7 +37,8 @@ Windows 10, Ubuntu 15.04
 
 
 The above command will open a GUI filled with 'df' contents as shown below:
-![ScreenShot](https://raw.github.com/anhaidgroup/wrappers_for_exploring_df/master/pandastable/figures/OpenRefinProject.PNG)
+
+
 
 The user can explore/update the dataframe in the GUI and after exploration he/she can 
 close the GUI. The updated dataframe can be accessed using the variable assigned to 
